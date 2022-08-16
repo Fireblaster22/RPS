@@ -1,24 +1,9 @@
 import random
-from tkinter import *
-root=Tk()
-
 
 user_wins = 0
 computer_wins = 0
 
 options = ["rock", "paper", "scissors"]
-
-def click1():
-    user_input=="rock"
-def click2():
-    user_input=="paper"
-def click3():
-    user_input=="scissors"
-
-button1 = Button(root, text="rock", command=click1)
-button2 = Button(root, text="paper", command=click2)
-button3 = Button(root, text="scissors", command=click3)
-
 
 
 while True:
@@ -57,7 +42,6 @@ while True:
         print("Its a Draw!")
         user_wins += 1
 
-
     else:
         print("You lost!")
         computer_wins += 1
@@ -65,9 +49,3 @@ while True:
 print("You won", user_wins, "times.")
 print("The computer won", computer_wins, "times.")
 print("Goodbye!")
-
-button1.grid(row=0,column=0)
-button2.grid(row=0,column=1)
-button3.grid(row=0,column=2)
-
-root.mainloop()
